@@ -1,0 +1,143 @@
+<ion-header no-header>
+  <ion-toolbar color = "dark">
+    <ion-segment mod = "md" [(ngModel)]="segment" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value = "0">
+        <ion-icon name="pie-chart-outline"></ion-icon>
+        Analytics
+      </ion-segment-button>
+
+      <ion-segment-button value = "1">
+        <ion-icon name="restaurant-outline"></ion-icon>
+        Vendors
+      </ion-segment-button>
+
+      <ion-segment-button value = "2">
+        <ion-icon name="people-outline"></ion-icon>
+        Customers
+      </ion-segment-button>
+
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color = "light">
+  <ion-slides #slides pager = "false" [options]="sliderOptions" (ionSlidesDidChange)="slideChanged(slides)" (ionSlidesDidLoad)="slideChanged(slides)">
+    <ion-slide>
+
+      <!-- <ion-grid>
+        <ion-row>
+          <ion-col><img src="assets/images/iphone.jpg"></ion-col>
+        </ion-row>
+      </ion-grid> -->
+
+
+
+
+
+      
+        <div class = "cards">
+          <ion-card  >
+            <ion-card-header>
+              Restaurants most ordered from:
+            </ion-card-header>
+            <ion-card-content>
+              <canvas #barCanvas></canvas>
+            </ion-card-content>
+          </ion-card>
+      
+          <ion-card>
+            <ion-card-header>
+              Most ordered food menu
+            </ion-card-header>
+            <ion-card-content>
+              <canvas #doughnutCanvas></canvas>
+            </ion-card-content>
+          </ion-card>
+      
+          <ion-card>
+            <ion-card-header>
+              Number of Users
+            </ion-card-header>
+            <ion-card-content>
+              <canvas #lineCanvas></canvas>
+            </ion-card-content>
+          </ion-card>
+        </div>
+
+    </ion-slide>
+
+    <ion-slide>
+
+      <ion-grid>
+       
+        <ion-card>
+          <ion-card-content>
+            <ion-card-title>Welcome to Super Admin Dashboard</ion-card-title>
+            <p>This screen is swipeable left and right.</p>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-content>
+            <div class="ion-padding">
+              <p> <a href=""><h1>Vendor Applications Received</h1></a></p>
+            </div>
+
+            <ion-list>
+              <ion-item-sliding *ngFor="let item of [1,1,1,1,1,1,1,1,1,1]; let i = index">
+                <ion-item >
+                  <ion-label>Detail of vendor applicant</ion-label>
+                </ion-item>
+                <ion-item-options side="start"(ionSwipe)="test()">
+                  <ion-item-option (click)="unread()" expandable>Update</ion-item-option>
+                  <ion-item-option color = "danger" (click) = "delete()">Reject</ion-item-option>
+                  <ion-item-option color = "success" (click) = "test()">Accept</ion-item-option>
+                  <ion-item-option shape= "round" color = "dark" (click) = "delete()"><ion-icon name="trash">Delete</ion-icon></ion-item-option>
+                </ion-item-options>
+              </ion-item-sliding>
+
+              <ion-item-sliding>
+                <ion-item>
+                  <ion-label>Detail of vendor applicant</ion-label>
+                </ion-item>
+                <ion-item-options side="end" (ionSwipe)="delete()">
+                  
+                  
+                </ion-item-options>
+              </ion-item-sliding>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-grid>
+
+    </ion-slide>
+
+    <ion-slide>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col><img src="assets/images/food6.jpg"></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><h1>Delicious Dish</h1></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <img src="assets/images/food2.jpg"/>
+            <label>QuietComfort Southern Style</label>
+            <label price>ZAR 99.00</label>
+          </ion-col>
+          
+          <ion-col>
+            <img src="assets/images/food1.png"/>
+            <label>Over-Red Grompies</label>
+            <label price>ZAR 58.00</label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>

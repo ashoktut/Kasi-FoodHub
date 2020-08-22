@@ -1,0 +1,14 @@
+ion-content{
+    --background: lightblue;
+     //--background-image: url(/assets/images/background.jpg);
+    // --background: url(/assets/images/background.jpg) 0 0/100% 100% no-repeat;
+ }
+ .card {
+    --background:lightblue;
+    padding: 30px;
+    height: calc(100vh - (200px + 56px));
+    overflow: hidden;
+  }
+.butn{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color='warning'>
+    <!--ion-icon name="menu" (click)="list()"></ion-icon-->
+
+    <ion-icon name="arrow-back" (click)="backButto()"></ion-icon>
+    <ion-title>restaurants</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <!--ion-card class="card">
+    <ion-card-title>Kasi Food</ion-card-title>
+    <img src = 'assets/images/logo2.jpg' style = "width: 100;height: 100;">
+    <ion-button expand="block" color = 'success' class="butn"  (click)="order()">View menu</ion-button>
+  </ion-card-->
+
+  <ion-card class="card" *ngFor="let r of rest.data">
+    <ion-card-title>{{r.restuarant_name}}</ion-card-title>
+    <img src = 'assets/images/logo.png' style = "width: 100;height: 100;">
+    <ion-button expand="block" color = 'success' class="butn" (click)="secOrder()">View menu</ion-button>
+  </ion-card>
+  <!--ion-card class="card">
+    <ion-card-title>Jay's Eatery</ion-card-title>
+    <img src = 'assets/images/logo3.jpg' style = "width: 100;height: 60;">
+    <ion-button expand="block" color = 'success' class="butn" (click)="thirdOrder()">View menu</ion-button>
+  </ion-card-->
+
+  
+</ion-content>
+

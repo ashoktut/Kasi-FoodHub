@@ -1,0 +1,71 @@
+
+  <ion-header>
+  <ion-toolbar color = 'warning'>
+    <ion-icon name="arrow-back" (click)="backButton()"></ion-icon>
+    <ion-title>Order</ion-title>
+  </ion-toolbar>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+  <ion-fab-button (click)="openCart()" #cart>
+    <div class="cart-length">{{cartItemCount | async}}</div>
+    <ion-icon name="cart" class="cart-icon"></ion-icon>
+  </ion-fab-button>
+  </ion-fab>
+
+   <h4>Menu</h4>
+ 
+   <ion-list>
+     <ion-row>
+      <ion-img class="logo" src="assets/images/logo.png" alt=""></ion-img>
+     </ion-row>
+   <ion-card *ngFor="let p of menuList" (click)="exProduct(p)" (click)="openExtras()">
+    <ion-card-header>
+      <ion-card-title>{{ p.item_name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <ion-label color="secondary">
+            <b>{{p.item_price | currency:'R'}}</b>
+          </ion-label>
+        </ion-col>
+       
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-list>
+<ion-card>
+  <!--this is the slides you will see on the home page-->
+  <ion-slides pager  >
+
+    <ion-slide >
+      <ion-img class="" src="assets/images/food2.jpg" alt=""></ion-img>
+      <h2>Slide 1</h2>
+    </ion-slide>
+  
+    <ion-slide >
+      <ion-img class="" src="assets/images/food3.jpg" alt=""></ion-img>
+      <h2>Slide 2</h2>
+    </ion-slide>
+  
+    <ion-slide >
+      <ion-img class="" src="assets/images/food4.jpg" alt=""></ion-img>
+      <h2>Slide 3</h2>
+    </ion-slide>
+
+    <ion-slide >
+      <ion-img class="" src="assets/images/food5.jpg" alt=""></ion-img>
+      <h2>Slide 4</h2>
+    </ion-slide>
+  
+  </ion-slides>
+</ion-card>
+</ion-content>
+
+

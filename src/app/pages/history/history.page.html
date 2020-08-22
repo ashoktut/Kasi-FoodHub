@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>history</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="openCart()" #cart>
+      <div class="cart-length">{{cartItemCount | async}}</div>
+      <ion-icon name="cart" class="cart-icon"></ion-icon>
+    </ion-fab-button>
+    </ion-fab>
+    <ion-card>
+      
+  <div class="panel panel-primary" *ngFor="let employee of employe">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{employee.name}}</h3>
+    </div>
+  
+    <div class="panel-body">
+      <div class="col-xs-10">
+        <div class="row vertical-align">
+          <div class="col-xs-4">
+             <img class="imageClass" [src]="employee.photoPath"/> 
+          </div>
+  
+          <div class="col-xs-8">
+            <div class="row">
+             <div class="col-xs-6">
+               Shop Name
+             </div>
+             <div class="col-xs-6">
+               :{{employee.shopName}}
+             </div>
+            </div>
+  
+            <div class="row">
+             <div class="col-xs-6">
+               Address
+             </div>
+             <div class="col-xs-6">
+               :{{employee.address}}
+             </div>
+            </div>
+  
+            <div class="row">
+             <div class="col-xs-6">
+             Price
+             </div>
+             <div class="col-xs-6">
+               :{{employee.price}}
+             </div>
+            </div>
+  
+            <ion-button (click)="addToCart(employee)" >Order</ion-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</ion-card>
+</ion-content>

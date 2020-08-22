@@ -1,0 +1,370 @@
+17 February 2020
+
+
+	It was my first day at work. I arrived early in the morning just like everyone, i got to meet the stuff members and my fellow colleages.
+
+
+18 February 2020
+
+
+	I was referred to the area i will be working from, while they were still busy organizing my workstation. I chose to work with my fellow colleage, although he was not in the group i got assigned to, so that i can adjust to the new working environment.
+
+
+19 February 2020 
+
+
+	I continued to with my fellow colleage throughout the whole day, as he was assigned a task of developing the back-end side of the administrator.
+
+
+20 February 2020
+
+
+	We had to attend a SCRUM training, for the entire day. Which was very enlightening and very encouraging in terms of how we do our planning in everything you want to, be it a project or anything.
+
+
+21 February 2020
+
+
+	It was presentation day from 10:30 till we knocked out. All groups managed to present their progress, and our team leaders gave us some points we need to improve on as we go through with our systems.
+
+
+24 FEBRUARY 2020
+
+
+	It was business as usual, we got in the office early in the morning and pushed our progress.
+
+
+25 FEBRUARY 2020
+
+
+	We came in the office early in the morning, and we got disrupted by the protests around 8am. And we were forced to leave the premises immediately. 
+
+
+26 FEBRUARY 2020
+
+
+	The strike still continued...
+
+
+27 FEBRUARY 2020
+
+
+	The strike still continued...
+
+
+28 FEBRUAARY 2020
+
+
+	The strike still continued...
+
+
+2 MARCH 2020
+
+
+	We met as team, and we were given tasks as to who should do what and when. 
+	I was given a task to display the order history in our application. Came to the office and pushed my task, and i was grouped with Khethiwe on my task. 
+	
+
+3 MARCH 2020
+
+	
+	I got reasigned to a different project, with a different team. 
+	We had our first meeting just outside the office, both Developers and our BA's. 
+	And we got to share some ideas on the functionalities of our system. Since we didn't have proper documentation, we were forced to just develop the registration and login pages only. I got assigned to do the registration page. 
+	I took the opportunity with both hands, since front-end is my strongest point.
+
+4 MARCH 2020
+
+
+	My former group and i agreed that we are cross nighthing, so i decided to tag along and push my new task. Cross nighting gave us a lot of time to get to understand a lot of things.
+
+
+5 MARCH 2020
+
+
+	I had a working page, and was left with connecting it to the database.		
+
+
+9 MARCH 2020
+
+	
+	I managed to connect the front-end to the database. And also got to enhance the front-end part of our registration page, and also got to do our index(landing page).
+	
+
+10 MARCH 2020
+
+	
+	We met for our daily SCRUM meetings, and agreed to do a form of reseach regarding our system. 
+	We delegated two teams to go conduct the research in specific departments. 
+
+
+11 MARCH 2020
+
+
+	We finally got the information we were looking for, and also got to allocate tasks to each and every member in our team. I was responsible for the registration form, database, as well as the index page.
+
+
+12 MARCH 2020
+
+
+	I managed to push 60% of my work, regarding the tasks i was given.
+
+
+13 MARCH 2020
+
+
+	I finally got to make some progress regarding the connection between the the front-end,back-end, and the database.	
+
+
+16 MARCH 2020
+
+	
+	I came to the office early in the morning and we waited for our team leaders to open the office for us. Calvin came and opened the office for us, we prayed and then started with our daily routines. 
+	We heard that there's a mini-strike at gencor hall, due to the crisis we are faced with as the entire world. 
+	I finally completed our index page as well as other pages of our system, and was only left with validating the registration page. 
+
+
+17 MARCH 2020
+
+	
+	We came in the morning as usual, and we were told that we the crisis i mentioned above is serious to a point where it forces the campus to be shutdown, with immediate effect. So we started packing our things, and cleared everything in the office. We were also told that from now onwards we are supposed to work from home.
+	 Our biggest challenge about working from home is the issue of having unlimited internet access, for pulling and pushing our work to github. 
+	A lot of us were merely depending on the internet access we were given at the office, but it was taken away from us and we could not force things given the current situation.	
+	
+
+18 MARCH 2020
+
+	
+	So it was the first day of working from home, i did not have internet access and money to buy data bundles. So i decided to use what i have at my finger tips, i figured that i can still code with PHP even when i am offline. I started pushing my tasks towards finishing them.
+	 	
+
+19 MARCH 2020
+
+
+	My greatest challenge was that i came across a lot of destructions while at working at home.
+
+
+20 MARCH 2020
+
+
+	I came up with a solution to the destruction issue, i started doing most of working at night, when everybody was asleep.
+	
+
+23 MARCH 2020
+	
+	
+	I started to put the idea of working at night into effect. It actually worked for the first time, and made some progress.
+
+
+24 MARCH 2020
+
+
+	I spent most of my time doing some research on how to go about completing my tasks, and also looking for other alternatives of coding in PHP. 	
+
+
+25 MARCH 2020
+
+
+	I downloaded a lot of videos during the night, so that i can study or watch them during the day, and hope that i will implement what i learned on our system.
+
+
+26 MARCH 2020
+				
+	
+	I got a nice video on how to develop a responsive "about us" page that has a social media links. I watched it a couple number of times, and then got the understanding behind the lesson. 	
+		
+
+27 MARCH 2020
+
+
+	I started implementing the knowledge i got on the video i recently watched, regarding linking our "about us" page to social media platforms.
+	
+
+30 MARCH 2020
+
+
+	Our greatest challenge concerning data arised again, group members started being quiet throughout the whole day. 
+	Thembelihle was the always checking up on us, and also checking on the progress we have made and how ahead must we go.
+	
+
+31 MARCH 2020
+
+
+	We came with a suggestion that, everyone should be up and ready to do their tasks as if we were still at the office. 
+	It did not work unfortunately, since others did not have access to computers(laptops), and data for some.
+
+
+1 APRIL 2020
+
+	
+	I started pushing my tasks without notifying anyone of my progress, since everyone was quiet in the group chat.
+	
+
+2 APRIL 2020
+
+	
+	I got stuck on how to deal with the issue of validating if whether a user was an admin or a lecturer, and how will our system deal with such a case. 
+	I finally got a way on how to go about the validating process, and just kept thinking more on how to implement it to the system.  	
+
+
+3 APRIL 2020
+
+
+	The group came back to life again, and i ran my idea past my group members, so we finally got to agree on the idea i had. I introduced two new tables in our database, 
+	one for the admin and other for the lecturers, such that each table with have a unique column(admin_id,staff_nr) we will use for validating if whether a user is authorized to use our system or not. 
+	I managed to put it to test, but was not sure if i applied it correctly. I uploaded all my work to git, for the team to access. 
+
+
+6 APRIL 2020
+
+
+	I started populating the two new tables with data, so that i can include the validation conditions. I implemented the idea and started to alter the registration form, 
+	with the purpose of including the staff number field in the registration form. 
+	
+
+
+
+7 APRIL 2020
+
+
+	I managed to add the new changes to the registration process, but could not actually get the issue of how to put the procedure of validating the staff number whenever a new user decides to register.
+	I came up with an idea of allowing users to just enter any stuff number and then that staff number was just pasted to the database, without it being validated or verified. Meaning that everyone was able to register into our system, without any authorization.    
+
+
+
+8 APRIL 2020
+
+
+	 I then came up with a way of setting our access rights, where each and every user's staff number was compared with all the staff numbers in our database. Every user that enters a unique staff that did not appear in the database, was allowed to register, 
+	 although it is not how it must be. I decided to think it through, as to how i would go about dealing with the staff numbers.     
+
+
+
+9 APRIL 2020
+
+
+	I managed to find a solution, where only the administrator was responsible for adding staff numbers to the database(in the staff table) before each and every lecturer can be able to register. Administrator is supposed to add any given staff number to the database,
+	and then give the very same staff number to the lecturer, for the lecturer to gain access right in terms of registering. 
+	Users with staff numbers that do not appear in the database are denied access to register, we regard them as guests to our system. 	
+
+
+
+10 APRIL 2020
+	
+
+	I started to move on to the other task, since i was done with restricting guests from our system. I moved to the task of hashing the password, 
+	protecting lecturer information from hackers or anyone that could try to breach into our database. I managed to hash the password that goes to the database,
+	but did not quiet get it correctly on the login part. The system forced users to input the hashed password exactly as it appears in the database. 
+	That is when i took the decision of going back and studying how to hash a password.  	
+
+
+
+13 APRIL 2020
+
+
+	Watched a few videos on how to deal with the issue of hashing the password, only to find out that i was missing the last the step on hashing the password. I did not include the line of code for hashing the passowrd in the login page, 
+	so that the normal password can be compared with the hashed password. 
+	So i included the code the line of code that i was missing for the login page to work accordingly, and i was done with hashing the password.
+
+
+
+14 APRIL 2020
+
+	
+	I moved to another task of showing error messages in a form of pop-up messages. I introduced components called "scripts" in the picture, 
+	and they worked just fine, since i managed to add specific error messages for specific errors.
+
+
+
+15 APRIL 2020
+
+
+	I started to check with the group in terms of the progress they have made, but they did not want to communicate. I sent a text in the group, but nobody responded, they just check the texts and choose to keep quite.
+
+
+16 APRIL 2020
+
+	
+	I was still busy with merging other parts of the project into one complete project. I did some checking up on hashing the password, and also test if it works or not. I managed to successfully hash the password, as well as validating the password and the staff number. 
+
+
+17 APRIL 2020
+
+
+	I had to take a video of our current progress, and submit it to our team leaders for evaluation. I also downloaded the required recording tool(s) for me to record the video. 
+	I managed to send the recording via e-mail to our team leaders.
+
+
+20 APRIL 2020
+
+
+	I moved to another task on our project, which is the password recovery via email. I started with it immediately, but didn't manage to finish it on the same day, so i push all my current work to git.
+
+
+21 APRIL 2020
+
+
+	I continued with the password recovery task, but got stuck on the issue of the password recovery link being sent to a user via e-mail that he/she must input on the system. 
+	I did some research and got an alternative on how to solve my error, then altered my code right away. 
+
+
+22 APRIL 2020
+
+
+	I managed to fix my code and the message with the link was sent, but it didn't reach my mailbox. I did some research again on how to successfully recover a password via e-mail, 
+	found a few videos and started to study them, before i can start implementing their ideas. 
+
+
+23 APRIL 2020
+
+
+	We got a WhatsApp text early in the morning that our Quality File System project has been suspended, they said that our system can only be tested at the ICEP offices. Testing it online is a tough issue, since we have to host it, and hosting it online means that we need TUT's approval. 
+	For us to get the approval, the system must have been tested before, so they suspended our project. So even though we put a lot of efforts in that project, we had to understand. 
+	
+
+24 APRIL 2020
+
+
+	They placed us back to our previous teams, i was taken back to KASIFOODHUB. I asked to be given a task in the project, i had to wait for the whole team of developers to give a brief report of the current progress they made. 
+
+
+27 APRIL 2020
+
+
+	The sprint was updated and a task was handed out to me. I started looking for tutorials for Ionic first before i can even commence with my task.
+
+
+28 APRIL 2020
+
+
+	I started first by installing the required packages for ionic. I managed to include a few buttons since i was given a task to CRUD the menu. 
+
+
+29 APRIL 2020
+
+
+	Ash introduced me to a nice software we could use as team, for communication purposes while coding. 
+	I downloaded the software immediately, and we got to use the software later on that day. Ash shared some light on how to go about doing my task, and used some of his ideas on my task.
+
+
+30 APRIL 2020
+
+
+	I had my code working 
+
+1 APRIL 2020
+
+
+	I created a new database for testing purposes, however i got stuck on how to connect the frontend to the database.    
+
+
+4 APRIL 2020
+
+
+	I added a sliding content on the menu page, and added the delete and update buttons on both sides of the menu page. I tried connecting the frontend to the database again, but failed.
+
+
+5 APRIL 2020
+		
+
+	I added the code for the functionality of the delete and update buttons.
