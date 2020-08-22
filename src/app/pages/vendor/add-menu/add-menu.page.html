@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color = 'dark'>
+    <ion-title>Menu</ion-title>
+
+    <ion-button slot="primary">
+
+      <ion-back-button text = "Back" icon =""></ion-back-button>
+      
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card color="dark">
+    <ion-card-header>Add Product</ion-card-header>
+    <ion-card-content>
+      <form action="add-menu.page.ts" method="POST">
+        <ion-item>
+          <ion-label position="floating">Product Name</ion-label>
+          <ion-input type="text" [(ngModel)]="item_name" name ="item_name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Product Description</ion-label>
+          <ion-input type="text" [(ngModel)]="item_description" name ="item_description"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Price R</ion-label>
+          <ion-input type="text" [(ngModel)]="item_price" name ="item_price"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          Is item available ?  
+          <ion-toggle [(ngModel)]="itemStatus" name ="itemStatus" color="success"></ion-toggle>        
+          <p *ngIf="itemStatus" name = "itemStatus">Active</p>
+          <p *ngIf="!itemStatus"  name = "itemStatus">Inactive</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="fixed">Image</ion-label>
+          <label class="control-label small" for="file_img">(jpg/png):</label> <input type="file" name="file_img">
+        </ion-item>
+        <ion-item>
+          <ion-button type ="submit" color = "tertiary" *ngIf="!id" (click)="createdProses()">Add to menu</ion-button>
+          <ion-button type ="submit" color = "tertiary" *ngIf="id>=1" (click)="updateProses()">Update</ion-button>
+        </ion-item>
+        
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

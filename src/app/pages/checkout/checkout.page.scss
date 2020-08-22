@@ -1,0 +1,34 @@
+h5{
+    text-align: center;
+}
+content{
+    //background-image: url('src/assets/imageskfh6.png');
+    background-color: lightness($color: #164750);
+}
+ion-input{
+    background-color:#b8dae0;
+    border-radius: 6px;
+    margin: 20px;
+    margin-right: 50px;
+}
+ion-button{
+    margin-left: 100px;
+}
+.deliv{
+    margin-left: -2px;
+}
+.collect{
+    border-color: #81daad
+}
+.success{
+    color: #068d3a;
+}
+
+.home-icon{
+    font-size: 45px;
+    cursor: pointer;
+    margin-top: -5px;
+}
+.error-message{
+    color: var(--ion-color-danger);
+}

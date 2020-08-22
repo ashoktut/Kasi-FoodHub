@@ -1,0 +1,32 @@
+
+h4{
+    text-align: center;
+    font-family: fantasy;
+    color: #414992;
+}
+.kasi{
+    border-radius: 20px;
+}
+ion-content{
+    background-color: #208a78;
+}
+ion-card.background{
+    --ion-background-color:
+}
+ion-fab-button{
+    height: 70px;
+    width: 70px;
+}
+.cart-icon{
+    font-size: 45px;
+}
+.cart-length{
+    color: var(--ion-color-primary);
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-weight: 600;
+    font-size: 1em;
+    min-width: 25px;
+    z-index: 10;
+}

@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color = "dark">
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/vendor-admin"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title text = "text-center">Profile</ion-title>
+
+    <ion-buttons collapse="true" slot="end">
+      <ion-button>
+        <ion-icon name="pencil-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+ <ion-content [fullscreen]="true">
+  <h4></h4>
+  <div>
+    <div class="row">
+    <div class="col-md-3">
+      <div class="text-center">
+        <img src="//placehold.it/100" class="avatar img-circle" alt="avatar" >
+       <h6>Upload Picture</h6>
+        
+        <input type="file" class="form-control">
+      </div>
+    </div>
+    </div>
+    <div *ngFor="let a of adminProf "><!--here is that variable *** from profile.ts
+    if you wanna know more about ngFor, ngIF, ngSwitch,etc check Angular Directives..
+  now 'a' is an object of our variable adminProf-->
+
+    
+    <ion-list >
+        <ion-item>
+          <ion-label position="stacked">{{a.email_address}}</ion-label><!--a.[[the exact name of the variable in the db]]-->
+          <ion-input color="primary" readonly="true"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">{{a.password}}</ion-label>
+          <ion-input color="primary" readonly="true"></ion-input>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+ 
+
+</ion-content>

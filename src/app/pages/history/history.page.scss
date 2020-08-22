@@ -1,0 +1,36 @@
+.cart-icon{
+    font-size: 45px;
+}
+.cart-length{
+    color: var(--ion-color-primary);
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-weight: 600;
+    font-size: 1em;
+    min-width: 25px;
+    z-index: 10;
+}
+ion-fab-button{
+    height: 70px;
+    width: 70px;
+}
+ion-content{
+    background-color: #208a78;
+}
+.imageClass{
+    width: 150px;
+    height: 150px;
+}
+.col-xs-6{
+    text-align: right;
+    margin-left: 17px;
+}
+.vertical-align{
+    display: flex;
+    align-items: center;
+}
+.panel-title{
+    color: #ffffff;
+    background-color:rgb(7, 132, 182);
+}

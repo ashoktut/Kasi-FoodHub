@@ -1,0 +1,8 @@
+{
+  "name": "FoodHub",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,20 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+    <ion-menu contentId="content1" side="start">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item (click)="openProfile()">Profile</ion-item> 
+          <ion-item (click)="openAddMenu()">Add to Menu</ion-item>
+          <ion-item (click)="openOverview()">Overview</ion-item>
+          <ion-item (click)="openAddMenu()">Add to Menu</ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="content1" main></ion-router-outlet>
+
+</ion-app>

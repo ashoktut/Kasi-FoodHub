@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color = 'warning'>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Restaurant Application</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  
+  <ion-item>
+    <ion-label position="floating">Owner Name: </ion-label>
+    <ion-input ngModel type="text" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Owner Surname: </ion-label>
+    <ion-input ngModel type="text" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Owner ID:</ion-label>
+    <ion-input type ="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Restaurant Name : </ion-label>
+    <ion-input ngModel type="text" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Restaurant Tax Number:</ion-label>
+    <ion-input type ="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Restaurant License ID:</ion-label>
+    <ion-input type ="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Telephone: </ion-label>
+    <ion-input type ="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Cellphone: </ion-label>
+    <ion-input type ="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" >email Address: </ion-label>
+    <ion-input type = "email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Address </ion-label>
+    <ion-input placeholder="Address Line 1"></ion-input>
+    <ion-input placeholder="Address Line 2"></ion-input>
+    <ion-input placeholder="City"></ion-input>
+    <ion-input placeholder="State"></ion-input>
+    <ion-input placeholder="Zip Code"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Delivery option</ion-label>
+    <ion-select placeholder="Select One">
+      <ion-select-option value="D">Delivery</ion-select-option>
+      <ion-select-option value="N">No Delivery</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <label>
+       Upload Documents
+      <input mbsc-input type="file" placeholder="choose file..." />
+     </label>
+  </ion-item>
+  <ion-button color ="success" shape="round" (click)="goHome()">submit application</ion-button>
+  <ion-button (click)="presentAlert()">Basic Alert</ion-button>
+</ion-card>        
+</ion-content>
