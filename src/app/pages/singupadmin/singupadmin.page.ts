@@ -75,7 +75,7 @@ export class SingupadminPage implements OnInit {
 
         };
         this.postPvdr.postData(body, 'proses-api.php').subscribe(data => {
-        this.router.navigateByUrl('/signin');
+        this.router.navigateByUrl('/login');
         console.log('submit works');
 
         });
