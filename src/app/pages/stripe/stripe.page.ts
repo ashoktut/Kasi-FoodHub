@@ -30,6 +30,7 @@ export class StripePage {
   }
 
   payWithStripe() {
+    this.route.navigate(['landing']);
     this.stripe.setPublishableKey(this.stripe_key);
 
     this.cardDetails = {
@@ -45,7 +46,7 @@ export class StripePage {
         this.makePayment(token.id);
       })
       .catch(error => console.error(error));
-    this.route.navigate(['stripe-web']);
+    
     }
 
   makePayment(token) {

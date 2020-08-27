@@ -169,13 +169,14 @@ const routes: Routes = [
     loadChildren: () => import('./edit/edit.module').then( m => m.EditPageModule)
   },
   {
-    path: 'invoice',
+    path: 'invoice/:id',
     loadChildren: () => import('./invoice/invoice.module').then( m => m.InvoicePageModule)
   },
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+    path: 'landing',
+    loadChildren: () => import('./pages/landing/landing.module').then( m => m.LandingPageModule)
   }
+
 
 ];
 @NgModule({

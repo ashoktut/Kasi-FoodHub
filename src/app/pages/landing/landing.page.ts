@@ -1,23 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { DataService } from '../../data.service.ts.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-landing',
+  templateUrl: './landing.page.html',
+  styleUrls: ['./landing.page.scss'],
 })
-export class HomePage {
+export class LandingPage implements OnInit {
 
   invoices:any = []
 
   constructor(
     public navCtrl: NavController,
     public datos: DataService
-  ) {
+  ) {}
 
+  ngOnInit() {
   }
 
+  
   ionViewWillEnter() {
     this.datos.checkItems()
     this.invoices = this.datos.getItems()
