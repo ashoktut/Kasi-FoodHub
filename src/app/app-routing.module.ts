@@ -163,7 +163,8 @@ const routes: Routes = [
    {
     path: 'stripe-web',
     loadChildren: () => import('./pages/stripe-web/stripe-web.module').then( m => m.StripeWebPageModule)
-   },  {
+   },
+  {
     path: 'edit',
     loadChildren: () => import('./edit/edit.module').then( m => m.EditPageModule)
   },
@@ -172,14 +173,9 @@ const routes: Routes = [
     loadChildren: () => import('./invoice/invoice.module').then( m => m.InvoicePageModule)
   },
   {
-    path: 'invoice-home',
-    loadChildren: () => import('./invoice-home/invoice-home.module').then( m => m.InvoiceHomePageModule)
-  },
-  {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   }
-
 
 ];
 @NgModule({

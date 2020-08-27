@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { DataService } from '../..';
+import { DataService } from '../../data.service.ts.service';
 
 @Component({
   selector: 'app-home',
