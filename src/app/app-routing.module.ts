@@ -94,10 +94,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/admin-login/admin-login.module').then( m => m.AdminLoginPageModule)
   },
   {
-    path: 'extras',
-    loadChildren: () => import('./pages/extras/extras.module').then( m => m.ExtrasPageModule)
-  },
-  {
     path: 'sidebar',
     loadChildren: () => import('./sidebar/sidebar.component').then( m => m.SidebarComponent)
   },
@@ -153,10 +149,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/payments/payments.module').then( m => m.PaymentsPageModule)
   },
   {
-    path: 'cart',
-    loadChildren: () => import('./pages/cart/cart.module').then( m => m.CartPageModule)
-  },
-   {
      path: 'stripe',
      loadChildren: () => import('./pages/stripe/stripe.module').then( m => m.StripePageModule)
   },

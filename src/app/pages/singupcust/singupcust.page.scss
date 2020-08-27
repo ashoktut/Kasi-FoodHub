@@ -34,14 +34,15 @@
             font-size: 24px;
             font-weight: 600;
             color: #303940;
-            height: calc(10vh - (200px + 56px));
+            height: calc(30vh - (200px + 56px));
         }
 
         .country {
             font-size: 90%;
-            color: goldenrod;
+            color: white;
             text-transform: uppercase;
             margin: 0 auto;
+            height: calc(40vh - (200px + 56px));
         }
     }
 }

@@ -8,12 +8,6 @@ const routes: Routes = [
     component: HomePage,
     children: [
         {
-            path: 'feed',
-            loadChildren: () => import('../pages/feed/feed.module').then(
-                m                       => m.FeedPageModule
-            )
-        },
-        {
             path: 'notifications',
             loadChildren: () => import('../pages/notifications/notifications.module').then(
                 m => m.NotificationsPageModule

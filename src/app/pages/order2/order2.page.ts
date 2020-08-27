@@ -6,7 +6,6 @@ import { Product } from '../../services/cart.service';
 import { ModalController } from '@ionic/angular';
 import { CartModalPage } from '../cart-modal/cart-modal.page';
 import { Router } from '@angular/router';
-import { ExtrasPage } from '../extras/extras.page';
 import { PostProvider } from '../../../providers/post-provider';
 import { Location } from '@angular/common';
 

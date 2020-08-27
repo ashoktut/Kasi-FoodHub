@@ -21,13 +21,12 @@ export class HistoryPage implements OnInit {
 
   }
 
-  addToCart(product){
+  addToCart(product) {
     this.cartService.addProduct(product);
   }
-  
 
-  async openCart(){
-    let modal = await this.modalCtrl.create({
+  async openCart() {
+    const modal = await this.modalCtrl.create({
       component: CartModalPage,
       cssClass: 'cart-modal'
     });

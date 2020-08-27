@@ -3,7 +3,6 @@ import { BehaviorSubject } from 'rxjs';
 import { CartService } from '../services/cart.service';
 import { ModalController } from '@ionic/angular';
 import { CartModalPage } from '../pages/cart-modal/cart-modal.page';
-import { ExtrasPage } from '../pages/extras/extras.page';
 import { Location } from '@angular/common';
 
 @Component({
@@ -54,13 +53,6 @@ export class OrderPage implements OnInit {
     modal.onWillDismiss().then(() => {
       this.fab.nativeElement.classList.remove('animated', 'bounceOutLeft');
       this.animateCSS('bounceLeft');
-    });
-    modal.present();
-  }
-  async openExtras() {
-    const modal = await this.modalCtrl.create({
-      component: ExtrasPage,
-      cssClass: 'extras'
     });
     modal.present();
   }

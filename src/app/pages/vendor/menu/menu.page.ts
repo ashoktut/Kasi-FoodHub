@@ -28,7 +28,7 @@ export class MenuPage implements OnInit {
     this.loadMenu();
     const val = event.target.value;
 
-    if (val && val.trim() != '') {
+    if (val && val.trim() !== '') {
 
           this.menus = this.menus.filter((item) => {
 
@@ -38,12 +38,6 @@ export class MenuPage implements OnInit {
 
       }
 
-
-  }
-
-  selectVal(val) {
-
-      alert("You have selected = " + val);
 
   }
 

@@ -1,11 +1,9 @@
-import { CartPage } from '../cart/cart.page';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { BehaviorSubject, from } from 'rxjs';
 import { NavController, ToastController, NavParams } from '@ionic/angular';
 import { CartService } from 'src/app/services/cart.service';
 import { ModalController } from '@ionic/angular';
 import { CartModalPage } from '../cart-modal/cart-modal.page';
-import { ExtrasPage } from '../extras/extras.page';
 import { Router} from '@angular/router';
 import { Location } from '@angular/common';
 
