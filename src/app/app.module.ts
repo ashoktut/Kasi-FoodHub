@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { CartModalPage } from './pages/cart-modal/cart-modal.page';
 import { CartModalPageModule } from './pages/cart-modal/cart-modal.module';
 import { OverviewPageModule} from './pages/vendor/overview/overview.module';
+import { ExtrasPageModule } from './pages/extras/extras.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { Stripe } from '@ionic-native/stripe/ngx';
 // import { AuthGuard } from './gaurds/auth.guard';
@@ -43,6 +44,7 @@ import { IonicStorageModule } from '@ionic/storage';
     OverviewPageModule,
     CartModalPageModule,
     AddMenuPageModule,
+    ExtrasPageModule,
     HttpClientModule,
     ProfilePageModule,
     IonicStorageModule.forRoot(),

@@ -12,19 +12,17 @@ import { ServiceproviderService } from 'src/app/services/serviceprovider.service
 })
 export class SingupcustPage implements OnInit {
 
-  // tslint:disable-next-line: variable-name
-  customer_id = '';
-  firstname = '';
-  surname = '';
-  gender = '';
+  firstName: string = "";
+  surname: string = "";
+  gender: string = "";
   // tslint:disable-next-line: variable-name
   cell_no: number;
   // tslint:disable-next-line: variable-name
-  email_address = '';
-  addressInfo = '';
-  passcode = '';
+  email_address: string = "";
+  addressInfo: string ="";
+  passCode: string = "";
   // tslint:disable-next-line: variable-name
-  confirm_password = '';
+  confirm_password: string = "";
 
   // userData = {"name":"", "surname":"", "email":"","password":"", "cpassword":"", "cell_no":""};//reg
   // tslint:disable-next-line: max-line-length
@@ -34,13 +32,12 @@ export class SingupcustPage implements OnInit {
 
     this.actRoute.params.subscribe((data: any) => {
 
-      this.firstname = data.name;
-      // this.surname = data.sur;
-      // this.passcode = data.pass;
-      // this.email_address = data.email;
-      // this.addressInfo = data.addressI;
-      // this.gender = data.gen;
-      // this.confirm_password = data.confirm;
+      this.firstName = data.firstName;
+      this.surname = data.surname;
+      this.passCode = data.passCode;
+      this.email_address = data.email_address;
+      this.addressInfo = data.addressI;
+      this.gender = data.gender;
 
     });
 
@@ -53,17 +50,17 @@ export class SingupcustPage implements OnInit {
       const body = {
 
         aksi: 'addCustomer',
-        firstname: this.firstname,
-        // surname: this.surname,
-        // passcode: this.passcode,
-        // email_address: this.email_address,
-        // addressInfo: this.addressInfo,
-        // gender: this.gender,
-        // confirm_password: this.confirm_password,
+        firstName: this.firstName,
+        surname: this.surname,
+        passCode: this.passCode,
+        email_address: this.email_address,
+        addressInfo: this.addressInfo,
+        gender: this.gender,
 
       };
+
       this.postPvdr.postData(body, 'proses-api.php').subscribe(data => {
-      this.route.navigate(['login']);
+      this.route.navigate(['signin']);
       console.log('submit works');
 
       });

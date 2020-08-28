@@ -1,0 +1,57 @@
+
+<ion-content padding>
+  
+  
+  <div class="ion-text-end" *ngFor="let p of ext" >
+  
+    <ion-button (click)="close()" (click)="removeExtraItem(p)" fill="clear" color="dark">
+      <ion-icon name="close" slot="start"></ion-icon>
+    </ion-button>
+  
+
+  <ion-item>
+    <b>{{p.name}}</b>
+  </ion-item>
+
+  <ion-list>
+    <ion-radio-group (ionChange)="radioChangeHandler($event)">
+      <ion-list-header>
+          Flavours
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label color="medium">Plain</ion-label>
+        <ion-radio value="plain"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="success">Lemon&Herb</ion-label>
+        <ion-radio value="Lemon&Herb"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="warning">Mild</ion-label>
+        <ion-radio value="Hild"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="danger">Hot</ion-label>
+        <ion-radio value="Hot"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <div>
+  <ion-list>
+    <ion-list-header>
+      Sauces
+    </ion-list-header>
+    <ion-item *ngFor="let entry of extra">
+      <ion-label>{{entry.name}}</ion-label>
+      <ion-label class="ion-text-right">{{entry.price | currency:'R'}}</ion-label>
+      <ion-checkbox slot="start" [(ngModel)]="entry.isChecked"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+      <ion-button expand="full" (click)="addExtra(extra)"  (click)="removeExtraItem(p)" (click)="addToCart(p)" (click)="close()">Add to Cart</ion-button>
+ </div>
+</div>
+</ion-content>
