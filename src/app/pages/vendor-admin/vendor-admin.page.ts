@@ -18,20 +18,21 @@ export class VendorAdminPage implements OnInit {
   @ViewChild('doughnutCanvas',  { static: true }) doughnutCanvas: ElementRef;
   @ViewChild('lineCanvas',  { static: true }) lineCanvas: ElementRef;
 
-  item_name: string = "";
+  // tslint:disable-next-line: variable-name
+  item_name = '';
   private barChart: Chart;
   private doughnutChart: Chart;
   private lineChart: Chart;
-  constructor(private menu: MenuController, private modalCtrl: ModalController,private router: Router,
-    private postPvdr: PostProvider,
-    private actRoute:ActivatedRoute, ) { }
+  constructor(private menu: MenuController, private modalCtrl: ModalController, private router: Router,
+              private postPvdr: PostProvider,
+              private actRoute: ActivatedRoute, ) { }
 
   ngOnInit() {
 
-    this.actRoute.params.subscribe((data:any) => {
+    this.actRoute.params.subscribe((data: any) => {
 
       this.item_name = data.name;
-     
+
       console.log(data);
     });
 
@@ -137,7 +138,7 @@ export class VendorAdminPage implements OnInit {
 
         aksi: 'add-chart',
         item_name : this.item_name,
-        
+
       };
       this.postPvdr.postData(body, 'proses-api.php').subscribe(data => {
         console.log('submit works');
