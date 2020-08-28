@@ -137,6 +137,22 @@ $postjson = json_decode(file_get_contents('php://input'), true);
 
             echo $result;
  
-        }          
+        }elseif ($postjson['aksi'] === 'addCustomer') {
+            // NOT FULLY FUNCTIONAL
+            $sql = mysqli_query($mysqli,"INSERT INTO customer SET 
+            firstname = '$postjson[firstname]',
+            surname = '$postjson[surname]',
+            gender = '$postjson[gender]',
+            cell_no = '$postjson[cell_no]',
+            email_address = '$postjson[email_address]',
+            passCode = '$postjson[passCode]'");
     
+                $customer_id = mysqli_insert_id($mysqli);
+    
+                if ($sql) $restua = json_encode(array('success'=> true, 'customer_id' => $customer_id));
+                else $restua = json_encode(array('success'=> false)); 
+              
+              echo $restua;     
+
+        } 
 ?>             
