@@ -70,7 +70,7 @@ export class InvoicePage implements OnInit {
         },
         {
           name: 'price',
-          type: 'number',
+          type: 'text',
           placeholder: 'Price Item'
         }
       ],

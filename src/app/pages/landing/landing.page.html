@@ -2,7 +2,7 @@
   <ion-toolbar color="warning">
     <ion-row class="ion-justify-content-center">
       <ion-col size="6">
-        <img src="/assets/images/Ionic_Logo.svg.png" alt="">
+        <!-- <img src="/assets/images/invoice_logo.jpg" alt=""> -->
       </ion-col>
     </ion-row>
     <ion-buttons slot="primary">
@@ -23,10 +23,10 @@
       </ion-item-options>
       <ion-item lines="none" >
         <ion-thumbnail slot="start">
-          <img src="/assets/images/invoice.svg.png">
+          <img src="/assets/images/food1.png">
         </ion-thumbnail>
         <ion-label>
-          <h2> <strong>{{invoice.total | currency }}</strong> </h2>
+          <h2> <strong>R{{invoice.total}}</strong> </h2>
           <p>{{invoice.costumer}}</p>
           <p>Date {{invoice.date | date}}</p>
         </ion-label>
