@@ -72,9 +72,9 @@ export class DataService {
 
     const goTable1 = () => {
 
-      const formatter = new Intl.NumberFormat('en-US', {
+      const formatter = new Intl.NumberFormat('en', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'ZAR',
         minimumFractionDigits: 2
       });
 
@@ -89,9 +89,9 @@ export class DataService {
     };
     const goTable2 = () => {
 
-      const formatter = new Intl.NumberFormat('en-US', {
+      const formatter = new Intl.NumberFormat('en', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'ZAR',
         minimumFractionDigits: 2
       });
 
